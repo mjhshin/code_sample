@@ -123,8 +123,6 @@
     [self addSubview:self.startHandle];
     [self addSubview:self.endHandle];
     
-    [self layoutHandles];
-    
     [self setValues];
 }
 
@@ -153,6 +151,8 @@
     [self drawCircleTrackInContext:context];
     
     [self drawGradientArcInContext:context];
+    
+    [self layoutHandles];
 }
 
 - (void)drawCircleTrackInContext:(CGContextRef)context
